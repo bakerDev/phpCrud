@@ -1,0 +1,555 @@
+/* 
+--COLORS
+
+--white-color: white;
+--golden-color: #cc9900;
+--grey-color: #dde0df;
+--footer-color: #191919;
+
+--FONTS
+
+--heading-font: 'Yeseva One', cursive, sans-serif;
+--paragraph-font: 'Lato', sans-serif;
+--menu-review-font: 'Gentium Book Basic', serif, sans-serif;
+--footer-font: 'Open Sans', sans-serif;
+ */
+
+
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+ }
+
+ h2{
+    font-size: 1.875rem;
+    color: #cc9900;
+    font-weight: 500;
+    font-family: 'Yeseva One', cursive, sans-serif;
+}
+p{
+    line-height: 1.5;
+    font-size: 0.8125rem;
+}
+h3{
+    font-size: 1.0625rem;
+    color: #cc9900;
+    font-weight: 500;
+    font-family: 'Yeseva One', cursive, sans-serif;
+}
+
+ body{
+    font-family: 'Lato', sans-serif;
+ }
+
+ .navigation{
+    height: 10vh;
+    width: 100%;
+    margin-bottom: 20vh;
+    margin-left: 0%;
+    margin-right: 0%;
+ }
+ nav a img{
+    margin: 5px 10px;
+ }
+
+ .nav-links {
+    float: right;
+    margin-right: 20px;
+  }
+
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    font-family: 'Gentium Book Basic', serif, sans-serif;
+    padding: 7px 13px;
+    border-radius: 2px;
+    transition: 0.3s;
+
+}
+
+#menu-icon {
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 42px;
+    display: none;
+  }
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/Bg.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    align-items: center;
+ }
+
+
+
+
+
+.header-text{
+text-align: center;
+}
+
+.header-text h1{
+    font-size: 7vw;
+    color: white;
+    font-weight: 500;
+    font-family: 'Yeseva One', cursive, sans-serif;
+}
+img.divider{
+    margin: 30px 0px;
+}
+
+
+.buttons button{
+    display: block;
+    margin: 13px 26px 26px 26px;
+}
+.primary{
+    color: white;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    padding: 14px 28px;
+
+}
+
+.primary:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.secondery{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.3s;
+    padding: 14px 28px;
+
+}
+.secondery:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+
+
+
+.about{
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    padding: 0 5%;
+    align-items: center;
+    background-image: url(img/pattern1.png);
+}
+.dish-content{
+    padding: 10px;
+    flex: 50%;
+}
+
+
+
+.Divider{
+    width: 12rem;
+    margin: 20px 0px;
+}
+
+.cook-image{
+    margin: 20px 0px 20px 60px;
+}
+.dish-image{
+    padding: 10px;
+    flex: 50%;
+}
+.paragraph{
+    font-family: 'Lato', sans-serif;
+    padding: 0px 13px;
+}
+
+
+
+/* ------------------Ingredients------------------ */
+
+
+.ingredients{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 10% 18%;
+    align-items: center;
+    background-image: url(img/bg5.png);
+}
+.empty{
+    padding: 10px;
+    flex: 50%;
+}
+.ingredients-description{
+    padding: 70px 60px;
+    flex: 50%;
+    background-color: rgba(0, 0, 0, 0.411);
+    border-radius: 5px;
+}
+.ingredients-description h2{
+    font-size: 2.2rem;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Yeseva One', cursive, sans-serif;
+}
+.ingredients-devider{
+    width: 16.3rem;
+    margin: 20px 0px;
+}
+
+.ingredients-description p{
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+.spices{
+    margin: 30px 0px 10px;
+    align-items: center;
+}
+.masala{
+    border-radius: 50%;
+    height: 88px;
+    width: 88px;
+    border: 4px solid rgba(65, 65, 65, 0.488);
+}
+
+
+/* ------------------MENU------------------ */
+
+
+
+.Menu{
+
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    background-image: url(img/pattern1.png);
+    padding: 1rem 11rem 5rem;
+}
+
+.col-1{
+    flex: 40%;
+    padding: 20PX 40PX;
+}
+
+.col-1 h2{
+    margin-top: 40px;
+}
+.col-2 h2{
+    margin-top: 40px;
+}
+.col-2{
+    flex: 40%;
+    padding: 20PX 40PX;
+}
+
+.dishes{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5px solid #cc9900;
+}
+
+.center p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 0.8125rem;
+
+}
+
+
+
+/* ------------------REVIEWS------------------ */
+
+
+.Reviews{
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 9% 30%;
+    align-items: center;
+    background-image: url(img/bg2.png);
+}
+
+.Guest-Reviews{
+    padding: 70px 60px;
+    background-color: rgba(0, 0, 0, 0.611);
+    border-radius: 5px;
+    align-items: center;
+}
+
+
+.Guest-Reviews P{
+    color: #ffffff;
+}
+
+
+/* ------------------RESERVATION------------------ */
+
+
+.Reservation{
+
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 9vh 23vw;
+    align-items: center;
+    background-image: url(img/pattern1.png);  
+}
+ 
+/* .images{
+    padding: 10px 40px;
+    flex: 50%;
+    display: inline-flex;
+} */
+
+.img1{
+    margin: 0px 50px 0px 0px;
+
+}
+
+ .forum-box{
+    padding: 0px 16% 0px 1%;
+    flex: 50%;   
+} 
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: ; */
+}
+.row{
+    flex: 50%;
+}
+
+.forum-box form label{
+    margin-bottom: 4px;
+    padding: 0;
+    position: relative;
+    top: 10px;
+    text-align: left;
+    font-size: 10px;
+    color: #cc9900;
+    display: block;
+    width: 9rem;
+    height: 1.5rem;
+}
+
+.forum-box form input, select{
+    display: block;
+    width: 8rem;
+    height: 1.5rem;
+    border: .5px solid rgba(128, 128, 128, 0.712);
+    font-size: 11px;
+    padding-left: 8px;
+}
+
+
+.book-button{
+    color: white;
+    font-size: 11px;
+    font-family: 'Lato', sans-serif;
+    padding: 4px 13px;
+    border: none;
+    background-color: #cc9900a6;
+    transition: 0.3s;
+    margin: 20px;
+}
+
+.book-button:hover{
+    /* padding: 5px 18px;
+    margin: 18px; */
+    transform: scale(1.3);
+    background-color: #cc9900;
+}
+
+
+
+/* ------------------FOOTER------------------ */
+
+
+.footer{
+
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 230px;
+    align-items: center;
+    background-color: black;
+    color: #ffffff; 
+}
+
+.footer .divider{
+    margin: 10px;
+    width: 9rem;
+}
+
+.footer h3{
+    color: #ffffff;
+}
+
+.footer-section{
+    margin-top: 40px;
+}
+
+
+
+@media screen and (max-width: 1080px) {
+    .nav-links {
+        display: none;
+      }
+    .navigation{
+        background-color: rgb(255, 174, 0);
+        padding: 0vw 2vw;
+        position: fixed;
+        z-index: 999
+
+    }
+    .header{
+        padding: 0%;
+    }
+    .header-text h1{
+        margin-top: 20rem;
+    }
+
+    #menu-icon {
+        display: inline-block;
+        color: white;
+        float: right;
+        margin-top: 2vh;
+      }
+
+      .about{
+        flex-direction: column;
+        height: 90vh;
+      }
+      .dish-content{
+        padding: 50px 30px;
+      }
+      .dish-image{
+        padding: 0%;
+      }
+      .dish-image img{
+        width: 20rem;
+      }
+
+      .empty{
+        padding: 0px;
+        flex: 0%;
+    }
+
+    .ingredients-description{
+        padding: 70px 60px;
+        flex: 100%;
+        background-color: rgba(0, 0, 0, 0.411);
+        border-radius: 5px;
+    }
+    
+    /*====+  +====+  +===+  +====+  +====+  +===*/
+
+    .Menu{
+        flex-direction: column;
+        height: 150vh;
+        padding: auto;
+        padding: 1.9em 1.9em 2.3em;
+    }
+
+    .col-1{
+        flex: 100%;
+        padding: 0;
+    }
+    
+    .col-1 h2{
+        margin-top: 40px;
+    }
+    .col-2 h2{
+        margin-top: 40px;
+    }
+    .col-2{
+        flex: 100%;
+        padding: 0;
+    }
+
+  }
+
+
+  @media screen and (max-width: 320px){
+    .Menu{
+        height: 170vh;
+    }
+  }
+
+  @media screen and (max-width: 960px){
+    .Reservation{
+        flex-direction: column;
+
+        padding: 1em 5em;
+        text-align: center;
+        align-items: center;
+
+    }
+    .forum-box{
+        margin: 2rem;
+    }
+    .images{
+        display: none;
+    }
+
+  }
+
